@@ -1,3 +1,9 @@
+body {
+  background: linear-gradient(135deg, #1e1b4b 0%, #3b0764 50%, #0f172a 100%);
+  background-attachment: fixed;
+  color: white;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -15,5 +21,188 @@
 .btn {
     height: 40px;
     width: 100px;
+    border-radius: 60px;
+    border: solid 2px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#home:hover {
+   background: linear-gradient(90deg,
+    #2c2c2c 0%,
+    #e0e0e0 33%,
+    #ffffff 66%,
+    #2c2c2c 100%);
+  color: black;
+}
+
+.btn:hover, .ebtn:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#en:hover {
+background:
+linear-gradient(to right, transparent 45%, #CE1126 45%, #CE1126 55%, transparent 55%),
+linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparent 55%);
+  background-color: white;
+  color: #CE1126;
+}
+
+#fr:hover {
+      background: linear-gradient(90deg,
+    #0055A4 0%,        /* Blue */
+    #0055A4 33.33%,
+    #FFFFFF 33.33%,
+    #FFFFFF 66.66%,
+    #EF4135 66.66%,
+    #EF4135 100%
+  );
+}
+
+#gr:hover {
+      background: linear-gradient(90deg,
+#000000 0%, #000000 28%,#DD0000 28%,#DD0000 65%,#FFCC00 65%,#FFCC00 100%)
+}
+
+#us:hover {
+    background: linear-gradient(90deg, #B22234, white, #3C3B6E);
+}
+
+.be {
+    background-color: rgb(32, 100, 66);
+}
+
+.econtainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+    animation: beat 0.6s infinite;
+}
+
+.line {
+    background-color: red;
+    animation: beat 0.6s infinite;
+}
+
+#l1 {
+    position: absolute;
+    height: 300px;
+    width: 30px;
+}
+
+#l2 {
+    position: absolute;
+    height: 30px;
+    width: 500px;
+}
+
+.etcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5px;
+}
+
+.etxt {
+    position: absolute;
+    margin-bottom: 2550px;
+    font-size: 90px;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.white {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blue {    color: #0055A4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ebtn {
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    margin-bottom: 1500px;
+    border-radius: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.fcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#fmain {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+#f1 {
+    background-color: #0055A4;
+    height: 300px;
+    width: 160px;
+    margin-right: 340px;
+    position: absolute;
+}
+
+#f2 {
+    background-color: #EF4135;
+    height: 300px;
+    width: 160px;
+    position: absolute;
+    margin-left: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes beat {
+  0%, 100% { transform: scale(1) rotate(); }
+  50%      { transform: scale(1.1); }
+}
