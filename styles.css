@@ -51,7 +51,7 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
 
 #fr:hover {
       background: linear-gradient(90deg,
-    #0055A4 0%,        /* Blue */
+    #0055A4 0%,        
     #0055A4 33.33%,
     #FFFFFF 33.33%,
     #FFFFFF 66.66%,
@@ -146,6 +146,11 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.og-blue {
+    color:			#2541b2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .ebtn {
     height: 40px;
     width: 100px;
@@ -193,6 +198,8 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: beat 0.6s infinite;
+    pointer-events: none;
     height: 100vh;
 }
 
@@ -201,6 +208,7 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     height: 300px;
     width: 500px;
     border: 2px solid black;
+    
 }
 
 #g1 {
@@ -226,12 +234,94 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     margin-bottom: 200px;
 }
 
-.ebody {
-    cursor: url("gb.ani"), auto;
+.ucontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: beat 0.6s infinite;
+    pointer-events: none;
 }
 
-.fbody {
-    cursor: url("france.ani"), auto;
+.umain {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    border: solid black 2px;
+}
+
+.ul {
+    background-color: red;
+    height: 30px;
+    width: 500px;
+    position: absolute;
+    margin-top:500px;
+}
+
+#u1 {
+    margin-top: 270px;
+}
+
+#u2 {
+    margin-top: 165px;
+}
+
+#u3 {
+    margin-top: 65px;
+}
+
+#u4 {
+    margin-bottom: 530px
+}
+
+#u5 {
+    margin-bottom: 650px;
+}
+
+#u6 {
+    margin-bottom: 770px;
+}
+
+#u7 {
+    background-color: #3C3B6E;
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    margin-bottom: 150px;
+    margin-right: 250px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  box-sizing: border-box;
+   padding: 6px 8px;
+}
+
+
+.stars-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+
+.star-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.star-row.offset {
+  justify-content: space-around; 
+}
+
+.star {
+    font-size: 10px;
+  color: white;
 }
 
 
