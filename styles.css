@@ -69,10 +69,6 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     background: linear-gradient(90deg, #B22234, white, #3C3B6E);
 }
 
-.be {
-    background-color: rgb(32, 100, 66);
-}
-
 .econtainer {
     display: flex;
     align-items: center;
@@ -87,6 +83,8 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     border: 2px solid black;
     animation: beat 0.6s infinite;
 }
+
+
 
 .line {
     background-color: red;
@@ -133,6 +131,21 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.yellow {
+    color: #FFCC00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gred {
+    color: #DD0000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.black {
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .ebtn {
     height: 40px;
     width: 100px;
@@ -142,14 +155,13 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-
 .fcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    pointer-events: none;
+    animation: beat 0.6s infinite;
 }
 
 #fmain {
@@ -157,6 +169,8 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     height: 300px;
     width: 500px;
     border: 2px solid black;
+    
+    
 }
 
 #f1 {
@@ -175,11 +189,50 @@ linear-gradient(to bottom, transparent 45%, #CE1126 45%, #CE1126 55%, transparen
     margin-left: 340px;
 }
 
+.gcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.gmain {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+}
 
+#g1 {
+    background-color: #FFCC00;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    margin-top: 200px;
+}
 
+#g2 {
+    background-color: #DD0000;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+}
 
+#g3 {
+    background-color: #000000;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    margin-bottom: 200px;
+}
 
+.ebody {
+    cursor: url("gb.ani"), auto;
+}
+
+.fbody {
+    cursor: url("france.ani"), auto;
+}
 
 
 
